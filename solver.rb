@@ -14,6 +14,7 @@ class Solver
         factorial *= i
       end
     end
+
     factorial
   end
 end
