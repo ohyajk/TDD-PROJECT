@@ -33,16 +33,17 @@ class Solver
   end
 
   def reverse
-    reversed_word = ""
+    reversed_word = ''
     i = @word.length - 1
     while i >= 0
       reversed_word += @word[i]
       i -= 1
     end
-    return reversed_word
+    reversed_word
   end
 end
 
-sol = Solver.new(5, 15)
+sol = Solver.new(5, 15, 'elon')
 puts sol.factorial
 puts sol.fizzbuzz
+puts sol.reverse
