@@ -1,6 +1,6 @@
 class Solver
   def initialize(num)
-    @n = num
+    @num = num
   end
 
   def factorial
