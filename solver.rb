@@ -5,7 +5,7 @@ class Solver
 
   def factorial
     if @n.negative?
-      puts 'Error: Factorial not defined for negative integers'
+      return 'No negative integers'
     elsif @n.zero?
       return 1
     else
