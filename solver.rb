@@ -20,4 +20,4 @@ class Solver
 end
 
 sol = Solver.new(5)
-puts sol.factorial
+puts sol.factorial()
