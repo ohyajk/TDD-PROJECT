@@ -14,4 +14,11 @@ describe Solver do
       expect(solz.factorial).to eql(1)
     end
   end
+
+  context 'should return error' do
+    sol_neg = Solver.new(-2)
+    it 'return error' do
+      expect(sol_neg.factorial).to eql('No negative integers')
+    end
+  end
 end
