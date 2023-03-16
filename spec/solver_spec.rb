@@ -1,9 +1,10 @@
 require './solver'
 
-describe solver do
+describe Solver do
     context 'should return fact' do
+        sol = Solver.new(5)
         it 'return correct fact' do
-            expect(solver.factorial).to eql(120)
+            expect(sol.factorial).to eql(120)
         end
     end
 end
