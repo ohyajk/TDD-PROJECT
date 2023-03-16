@@ -1,5 +1,5 @@
 class Solver
-  def initialize(num,fb_num)
+  def initialize(num, fb_num)
     @num = num
     @fb_num = fb_num
   end
@@ -20,19 +20,18 @@ class Solver
   end
 
   def fizzbuzz
-    if @fb_num % 3 == 0 && @fb_num % 5 == 0
-      return "fizzbuzz"
-    elsif @fb_num % 3 == 0
-      return "fizz"
-    elsif @fb_num % 5 == 0
-      return "buzz"
+    if (@fb_num % 3).zero? && (@fb_num % 5).zero?
+      'fizzbuzz'
+    elsif (@fb_num % 3).zero?
+      'fizz'
+    elsif (@fb_num % 5).zero?
+      'buzz'
     else
-      return @fb_num.to_s
+      @fb_num.to_s
     end
   end
-
 end
 
-sol = Solver.new(5,15)
+sol = Solver.new(5, 15)
 puts sol.factorial
 puts sol.fizzbuzz
