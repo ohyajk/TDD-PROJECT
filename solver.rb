@@ -1,24 +1,22 @@
 class Solver
+  def initialize(n)
+    @n = n
+  end
 
-    def initialize(n)
-      @n = n
+  def factorial
+    if @n.negative?
+      puts 'Error: Factorial not defined for negative integers'
+    elsif @n.zero?
+      return 1
+    else
+      factorial = 1
+      (1..@n).each do |i|
+        factorial *= i
+      end
     end
-
-    def factorial
-        if @n < 0
-            puts "Error: Factorial not defined for negative integers"
-          elsif @n == 0
-            return 1
-          else
-            factorial = 1
-            (1..@n).each do |i|
-              factorial *= i
-            end
-        end
-        return factorial
-    end
-  
+    factorial
+  end
 end
 
 sol = Solver.new(5)
-puts sol.factorial()
+puts sol.factorial
