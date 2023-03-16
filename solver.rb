@@ -1,7 +1,8 @@
 class Solver
-  def initialize(num, fb_num)
+  def initialize(num, fb_num, word)
     @num = num
     @fb_num = fb_num
+    @word = word
   end
 
   def factorial
@@ -29,6 +30,16 @@ class Solver
     else
       @fb_num.to_s
     end
+  end
+
+  def reverse
+    reversed_word = ""
+    i = @word.length - 1
+    while i >= 0
+      reversed_word += @word[i]
+      i -= 1
+    end
+    return reversed_word
   end
 end
 

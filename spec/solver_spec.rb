@@ -45,3 +45,12 @@ describe Solver do
     end
   end
 end
+
+describe Solver do
+  context 'should return reverse string' do
+    sol_rev = Solver.new(5, 15, 'elon')
+    it 'return reversed string' do
+      expect(sol_rev.reverse).to eql('nole')
+    end
+  end
+end
