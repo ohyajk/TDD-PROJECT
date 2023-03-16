@@ -14,8 +14,8 @@ class Solver
             (1..@n).each do |i|
               factorial *= i
             end
-            return factorial
-          end
+        end
+        return factorial
     end
   
 end
