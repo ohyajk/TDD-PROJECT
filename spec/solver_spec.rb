@@ -51,6 +51,13 @@ describe Solver do
       expect(sol_fb4.fizzbuzz).to eql(7)
     end
   end
+
+  context 'should return reverse string' do
+    sol_rev = Solver.new(5, 15, 'elon')
+    it 'return reversed string' do
+      expect(sol_rev.reverse).to eql('nole')
+    end
+  end
 end
 
 
