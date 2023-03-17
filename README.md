@@ -103,6 +103,7 @@ To view the project, run the file `solver.rb`.
 
 Contributions, issues, and feature requests are welcome!
 
+- Add an issue here :- https://github.com/ohyajk/TDD-PROJECT/issues
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
