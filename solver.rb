@@ -28,7 +28,7 @@ class Solver
     elsif (@fb_num % 5).zero?
       'buzz'
     else
-      @fb_num.to_s
+      @fb_num
     end
   end
 
