@@ -44,6 +44,14 @@ describe Solver do
       expect(sol_fb3.fizzbuzz).to eql('fizz')
     end
   end
+
+  context 'should return integer' do
+    sol_fb4 = Solver.new(5, 7, 'elon')
+    it 'return integer if not divisible by 3,5' do
+      expect(sol_fb4.fizzbuzz).to eql(7)
+    end
+  end
+
 end
 
 describe Solver do
