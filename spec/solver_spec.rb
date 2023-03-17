@@ -51,7 +51,6 @@ describe Solver do
       expect(sol_fb4.fizzbuzz).to eql(7)
     end
   end
-
 end
 
 describe Solver do
